@@ -6,14 +6,14 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Burlington Electronics Repair</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
+        <Header title="Burlington Electronics Repair" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Give your electronics a second chance -- don't toss them, fix them!
         </p>
       </main>
 
