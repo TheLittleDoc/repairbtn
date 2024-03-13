@@ -1,7 +1,7 @@
 export default function Header({ title }) {
   return (
     <nav>
-      <ul>
+      <ul className="nav-ul">
         <li className="nav-item logo">
           <img src="/logo.png" alt="Burlington Electronics Repair logo" />
         </li>
