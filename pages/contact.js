@@ -19,7 +19,7 @@ export default function Contact() {
         <Header />
         <h1>Contact Us</h1>
         // html form 
-        <form class="form-horizontal" netlify>
+        <form class="form-horizontal" method="POST" netlify>
             <fieldset>
 
             <legend>Form Name</legend>
@@ -78,7 +78,7 @@ export default function Contact() {
             <div class="form-group">
                 <label class="col-md-4 control-label" for="submit">Submit</label>
                 <div class="col-md-4">
-                    <button id="submit" name="submit" class="btn btn-primary">Button</button>
+                    <button id="submit" name="submit" type="submit" class="btn btn-primary">Button</button>
                 </div>
             </div>
 
