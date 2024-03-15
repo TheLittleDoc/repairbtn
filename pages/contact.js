@@ -37,6 +37,8 @@ export default function Contact() {
             <p>
                 <button type="submit">Send</button>
             </p>
+            <input type="hidden" name="contact" value="contact"> </input>
+
         </form>
 
         <form class="form-horizontal" method="POST" data-netlify="true">
