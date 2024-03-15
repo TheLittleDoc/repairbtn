@@ -4,7 +4,7 @@ import Footer from '@components/Footer'
 
 export default function Services() {
   return (
-    <div className="container">
+    <>
       <Head>
         <title>Burlington Electronics Repair</title>
         <link rel="icon" href="/favicon.ico" />
@@ -20,6 +20,6 @@ export default function Services() {
       </main>
 
       <Footer />
-    </div>
+    </>
   )
 }

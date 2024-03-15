@@ -1,4 +1,4 @@
-.nav-item {
+.navItem {
     margin: 0 10px;
     padding: 10px;
     border-radius: 5px;
@@ -6,25 +6,42 @@
     transition: background-color 0.3s;
     text-decoration: none;
     color: #000000;
+    display: inline;
 }
 
-.nav-item:hover {
+.navItem:hover {
     background-color: #f2f2f2;
 }
+
 
 .active {
     background-color: #f2f2f2;
 }
 
-nav {
-    display: inline;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    
-}
-.nav-ul {
-    display: inline-block;
+.navul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 30 0;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    
+    width: 48px;
+    height: 48px;
+    cursor: default;
+    
+}
+
+.spacer {
+    cursor: default;
+}
+.spacer:hover {
+    background-color: white;
+}
+.logo:hover {
+    background-color: white;
 }
