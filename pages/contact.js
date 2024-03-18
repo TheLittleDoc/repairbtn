@@ -3,7 +3,7 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 
 function goToServices() {
-    console.log("Hello")
+  console.log("Hello")
 }
 
 export default function Contact() {
@@ -13,34 +13,80 @@ export default function Contact() {
         <title>Contact - Burlington Electronics Repair</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+
 
       <main>
         <Header />
         <h1>Contact Us</h1>
         <form name="contact" action="/hidden.html" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="contact" />
-            <p>
-                <label>Your Name: <input type="text" name="name" /></label>
-            </p>
-            <p>
-                <label>Your Email: <input type="email" name="email" /></label>
-            </p>
-            <p>
-                <label>Your Role: <select name="role[]" multiple>
-                <option value="leader">Leader</option>
-                <option value="follower">Follower</option>
-                </select></label>
-            </p>
-            <p>
-                <label>Message: <textarea name="message"></textarea></label>
-            </p>
-            <p>
-                <button type="submit">Send</button>
-            </p>
+          <input type="hidden" name="form-name" value="contact" />
+
+          <fieldset>
+
+            <legend>Form Name</legend>
+
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="name">Full Name</label>
+              <div class="col-md-4">
+                <input id="name" name="name" type="text" placeholder="first and last" class="form-control input-md" required="" />
+
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="phone">Phone Number</label>
+              <div class="col-md-4">
+                <input id="phone" name="phone" type="text" placeholder="(123) 456-7890" class="form-control input-md" required="" />
+
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="email">Email Address</label>
+              <div class="col-md-4">
+                <div class="input-group">
+                  <input id="email" name="email" class="form-control" type="text" placeholder="you@example.com" required="" />
+                  <span class="input-group-addon">
+                    <input type="checkbox" />
+                  </span>
+                </div>
+                <p class="help-block">We generally make contact by phone. Check the box if email is preferred.</p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="services">Select Services</label>
+              <div class="col-md-4">
+                <select id="services" name="services" class="form-control" multiple="multiple">
+                  <option value="1">General Maintenance</option>
+                  <option value="2">Electrical Repair</option>
+                  <option value="3">Mechanical Repair</option>
+                  <option value="4">Cleaning</option>
+                  <option value="">Help me decide</option>
+                </select>
+                <p class="help-block">Hold Ctrl to select multiple</p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="message">Message</label>
+              <div class="col-md-4">
+                <textarea class="form-control" id="message" name="message"></textarea>
+              </div>
+
+            </div>
+
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="submit">Submit</label>
+              <div class="col-md-4">
+                <button id="submit" name="submit" type="submit" class="btn btn-primary">Button</button>
+              </div>
+            </div>
+
+          </fieldset>
         </form>
 
-        
+
 
       </main>
 
