@@ -40,50 +40,7 @@ export default function Contact() {
             </p>
         </form>
 
-        <form class="form-horizontal" method="POST" data-netlify="true">
-            <fieldset>
-
-            <legend>Form Name</legend>
-
-            <label class="col-md-4 control-label" for="name">Full Name</label>
-            <input id="name" name="name" type="text" placeholder="first and last" class="form-control input-md" required="" />
-    
-            <label class="col-md-4 control-label" for="phone">Phone Number</label>  
-            <input id="phone" name="phone" type="text" placeholder="(123) 456-7890" class="form-control input-md" required="" />
-                
-
-            <label class="col-md-4 control-label" for="email">Email Address</label>
-                <div class="input-group">
-                <input id="email" name="email" class="form-control" type="text" placeholder="you@example.com" required="" />
-                        <span class="input-group-addon">     
-                    <input type="checkbox" />     
-                </span>
-                </div>
-                <p class="help-block">We generally make contact by phone. Check the box if email is preferred.</p>
-
-
-            <label class="col-md-4 control-label" for="services">Select Services</label>
-            <div class="col-md-4">
-                <select id="services" name="services" class="form-control" multiple="multiple">
-                <option value="1">General Maintenance</option>
-                <option value="2">Electrical Repair</option>
-                <option value="3">Mechanical Repair</option>
-                <option value="4">Cleaning</option>
-                <option value="">Help me decide</option>
-                </select>
-                <p class="help-block">Hold Ctrl to select multiple</p>
-            </div>
-
-            <label class="col-md-4 control-label" for="message">Message</label>               
-                <textarea class="form-control" id="message" name="message"></textarea>
-
-
-                <label class="col-md-4 control-label" for="submit">Submit</label>
-                    <button id="submit" name="submit" type="submit" class="btn btn-primary">Button</button>
         
-
-            </fieldset>
-            </form>
 
       </main>
 
