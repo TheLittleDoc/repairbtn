@@ -5,11 +5,10 @@ export function Spacer({ width }) {
 }
 export default function Header({ title }) {
   return (
+    <>
+    <img className={styles.logo} src="/repairbtn3.png" alt="Burlington Electronics Repair logo" />
     <nav className={styles.nav}>
       <ul className={styles.navul}>
-        <li className={`${styles.navItem}`}>
-          <img className={styles.logo} src="/logo.png" alt="Burlington Electronics Repair logo" />
-        </li>
         <li className={styles.navItem}>
           <a href="/">Home</a>
         </li>
@@ -30,6 +29,7 @@ export default function Header({ title }) {
 
       </ul>
     </nav>
+    </>
 
   );
 }
