@@ -19,6 +19,14 @@ main {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  main {
+    padding: 2rem 0;
+    width: 100%;
+    margin: 5px;
+  }
+}
+
 code {
   background: #fafafa;
   border-radius: 5px;
