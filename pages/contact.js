@@ -50,7 +50,7 @@ export default function Contact() {
                   <input id="email" name="email" type="text" placeholder="you@example.com"
                          required=""/>
                   <span>
-                    <input type="checkbox" value="Email Preferred"/>
+                    <input type="checkbox" name="contact-by" value="Email Preferred"/>
                   </span>
                 </div>
                 <p>We generally make contact by phone. Check the box if email is preferred.</p>
