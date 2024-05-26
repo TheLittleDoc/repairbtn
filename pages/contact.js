@@ -63,23 +63,23 @@ export default function Contact() {
                 <div>
 
                   <div>
-                    <input type="checkbox" name="services" id="services-0" value="1"/>
+                    <input type="checkbox" name="services" id="services-0" value="General"/>
                     <label>General Maintenance</label>
                   </div>
                   <div>
-                    <input type="checkbox" name="services" id="services-1" value="2"/>
+                    <input type="checkbox" name="services" id="services-1" value="Electrical"/>
                     <label>Electrical Repair</label>
                   </div>
                   <div>
-                    <input type="checkbox" name="services" id="services-2" value="3"/>
+                    <input type="checkbox" name="services" id="services-2" value="Mechanical"/>
                     <label>Mechanical Repair</label>
                   </div>
                   <div>
-                    <input type="checkbox" name="services" id="services-3" value="4"/>
+                    <input type="checkbox" name="services" id="services-3" value="Cleaning"/>
                     <label>Cleaning</label>
                   </div>
                   <div>
-                    <input type="checkbox" name="services" id="services-4" value="5"/>
+                    <input type="checkbox" name="services" id="services-4" value="Help"/>
                     <label>Help me decide</label>
                   </div>
                 </div>
