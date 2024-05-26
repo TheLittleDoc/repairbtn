@@ -23,74 +23,91 @@ export default function Contact() {
 
           <fieldset>
 
-            <legend>Form Name</legend>
+            <legend>Service Inquiry</legend>
 
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="name">Full Name</label>
-              <div class="col-md-4">
-                <input id="name" name="name" type="text" placeholder="first and last" class="form-control input-md" required="" />
-
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="phone">Phone Number</label>
-              <div class="col-md-4">
-                <input id="phone" name="phone" type="text" placeholder="(123) 456-7890" class="form-control input-md" required="" />
+            <div>
+              <label>Full Name</label>
+              <div>
+                <input id="name" name="name" type="text" placeholder="first and last"
+                       required=""/>
 
               </div>
             </div>
 
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="email">Email Address</label>
-              <div class="col-md-4">
-                <div class="input-group">
-                  <input id="email" name="email" class="form-control" type="text" placeholder="you@example.com" required="" />
-                  <span class="input-group-addon">
-                    <input type="checkbox" />
+            <div>
+              <label>Phone Number</label>
+              <div>
+                <input id="phone" name="phone" type="text" placeholder="(123) 456-7890"
+                       required=""/>
+
+              </div>
+            </div>
+
+            <div>
+              <label>Email Address</label>
+              <div>
+                <div>
+                  <input id="email" name="email" type="text" placeholder="you@example.com"
+                         required=""/>
+                  <span>
+                    <input type="checkbox"/>
                   </span>
                 </div>
-                <p class="help-block">We generally make contact by phone. Check the box if email is preferred.</p>
+                <p>We generally make contact by phone. Check the box if email is preferred.</p>
               </div>
             </div>
+            <fieldset>
 
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="services">Select Services</label>
-              <div class="col-md-4">
-                <select id="services" name="services" class="form-control" multiple="multiple">
-                  <option value="1">General Maintenance</option>
-                  <option value="2">Electrical Repair</option>
-                  <option value="3">Mechanical Repair</option>
-                  <option value="4">Cleaning</option>
-                  <option value="">Help me decide</option>
-                </select>
-                <p class="help-block">Hold Ctrl to select multiple</p>
+              <legend>Select Services</legend>
+              <div>
+                <div>
+
+                  <div>
+                    <input type="checkbox" name="services" id="services-0" value="1"/>
+                    <label>General Maintenance</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="services" id="services-1" value="2"/>
+                    <label>Electrical Repair</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="services" id="services-2" value="3"/>
+                    <label>Mechanical Repair</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="services" id="services-3" value="4"/>
+                    <label>Cleaning</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="services" id="services-4" value="5"/>
+                    <label>Help me decide</label>
+                  </div>
+                </div>
               </div>
-            </div>
+            </fieldset>
 
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="message">Message</label>
-              <div class="col-md-4">
-                <textarea class="form-control" id="message" name="message"></textarea>
+              <div>
+                <label>Message</label>
+                <div>
+                  <textarea id="message" name="message"></textarea>
+                </div>
+
               </div>
 
-            </div>
-
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="submit">Submit</label>
-              <div class="col-md-4">
-                <button id="submit" name="submit" type="submit" class="btn btn-primary">Button</button>
+              <div>
+                <label>Submit</label>
+                <div>
+                  <button id="submit" name="submit" type="submit">Button</button>
+                </div>
               </div>
-            </div>
 
-          </fieldset>
+            </fieldset>
         </form>
-
 
 
       </main>
 
-      <Footer />
+      <Footer/>
     </>
   )
 }
