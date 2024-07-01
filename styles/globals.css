@@ -18,12 +18,23 @@ main {
   justify-content: center;
   align-items: center;
 }
+content {
+  padding: 0 1rem;
+  max-width: 1200px;
+  min-width: 768px;
+  width: 75%;
+}
 
 @media (max-width: 768px) {
   main {
-    padding: 2rem 0;
     width: 100%;
-    margin: 5px;
+  }
+  content {
+    width: 100%;
+    min-width: auto;
+  }
+  body {
+    padding: 0;
   }
 }
 
@@ -36,4 +47,11 @@ code {
 
 .container {
   height: 100vh;
+}
+
+#helpText {
+  font-size: .8rem;
+  margin: 0;
+  padding: 0 0 0 5px;
+  color: #333;
 }

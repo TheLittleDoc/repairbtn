@@ -17,6 +17,7 @@ export default function Contact() {
 
       <main>
         <Header />
+        <content>
         <h1>Contact Us</h1>
         <form name="contact" action="/hidden.html" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contact" />
@@ -46,14 +47,19 @@ export default function Contact() {
             <div>
               <label>Email Address</label>
               <div>
-                <div>
                   <input id="email" name="email" type="text" placeholder="you@example.com"
                          required=""/>
-                  <span>
-                    <input type="checkbox" name="contact-by" id="contact-mode" value="Email Preferred"/>
-                  </span>
-                </div>
-                <p>We generally make contact by phone. Check the box if email is preferred.</p>
+
+              </div>
+              <label>Contact Preference</label>
+
+              <div>
+                <p id="helpText">Our phone hours are limited. If you have concerns about recieving calls between [time] and [time],
+                  make sure to select "Email".</p>
+                <input type="radio" name="contact" id="contact-0" value="email"/>
+                <label>Email</label>
+                <input type="radio" name="contact" id="contact-1" value="phone"/>
+                <label>Phone</label>
               </div>
             </div>
             <fieldset>
@@ -62,7 +68,7 @@ export default function Contact() {
               <div>
                 <div>
 
-                  <div>
+                <div>
                     <input type="checkbox" name="services" id="services-0" value="General"/>
                     <label>General Maintenance</label>
                   </div>
@@ -103,7 +109,7 @@ export default function Contact() {
 
             </fieldset>
         </form>
-
+        </content>
 
       </main>
 

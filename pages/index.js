@@ -14,12 +14,14 @@ export default function Home() {
       <main>
         <Header />
         <Hero imageSource={"/logo.png"} height={"300px"} />
-        <p className="description">
-          Give your electronics a second chance -- don't toss them, fix them!
-        </p>
+          <content>
+              <p className="description">
+                  Give your electronics a second chance -- don't toss them, fix them!
+              </p>
+          </content>
       </main>
 
-      <Footer />
+        <Footer/>
     </div>
   )
 }
