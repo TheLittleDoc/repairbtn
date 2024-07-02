@@ -8,12 +8,12 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Burlington Electronics Repair</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main>
         <Header />
-        <Hero imageSource={"/logo.png"} height={"300px"} />
+        <Hero imageSource={"/banner.png"} height={"600px"} />
           <content>
               <p className="description">
                   Give your electronics a second chance -- don't toss them, fix them!

@@ -6,26 +6,26 @@ export function Spacer({ width }) {
 export default function Header({ title }) {
   return (
     <>
-    <a className={styles.logo} href="/" alt="Logo. Click to go home."><img className={styles.logo} src="/repairbtn3.png" alt="Burlington Electronics Repair logo" /></a>
+    <a className={styles.logo} href="/"><img alt="Logo. Click to go home." className={styles.logo} src="/repairbtn3.png" /></a>
     
     <nav className={styles.nav}>
       <ul className={styles.navul}>
-        <li className={`${styles.navItem} ${styles.home}`}>
-          <a href="/">Home</a>
+        <li>
+          <a className={`${styles.navItem} ${styles.home}`} href="/">Home</a>
         </li>
-        <li className={styles.navItem}>
-          <a href="/services">Services</a>
+        <li>
+          <a className={styles.navItem} href="/services">Services</a>
         </li>
-        <li className={styles.navItem}>
-          <a href="/contact">Contact</a>
+        <li>
+          <a className={styles.navItem} href="/contact">Contact</a>
         </li>
 
-        <li className={styles.navItem}>
-          <a href="/about">About</a>
+        <li>
+          <a className={styles.navItem} href="/about">About</a>
         </li>
         <Spacer width={100} />
-        <li className={styles.navItem}>
-          <a href="https://venmo.com/u/repairbtn">Pay</a>
+        <li>
+          <a className={styles.navItem} href="https://venmo.com/u/repairbtn">Pay</a>
         </li>
 
       </ul>

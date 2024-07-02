@@ -2,9 +2,6 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 
-function goToServices() {
-  console.log("Hello")
-}
 
 export default function Contact() {
   return (
@@ -14,7 +11,17 @@ export default function Contact() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
+      <style>
+        {`
+        #message {
+            width: 100%;
+            
+          }
+            fieldset > div {
+                margin-bottom: 0.5rem;
+            }
+        `}
+      </style>
       <main>
         <Header />
         <content>
